@@ -14,13 +14,12 @@ ul {
 }
 
 :root{
-    --main-color: green;
-    --secondary-color: purple;
-    --text-color: rgb(255, 187, 0);
-    --main-color: #494949;
+    --main-color: purple;
+    --secondary-color: red;
+    --text-color: gold;
     --border-color: #303030;
     --gradient-start: #4d4d4d;
-    --gradient-end: #1f1f1e;
+    --gradient-end: #2b2b2b;
     --bg-gradient-start: #2c2c2c;
     --bg-gradient-end: #424242;
     --bg-color:rgb(137, 35, 107);
@@ -138,7 +137,7 @@ header nav ul li a:hover::before{
     justify-content: center;
     align-items: center;
     color:var(--text-color);
-    background-color: var(--bg-color);
+    background-color: rgb(28, 28, 28);
     border: none;
     outline: none;
     cursor: pointer;
@@ -151,3 +150,109 @@ header ul li a:hover{
     color: purple;
 }
 
+.profile-container{
+    height: 100%;
+    position: relative;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px 0px 30px 30px;
+    overflow: hidden;
+}
+
+.user-profile-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+}
+
+.user-profile-img{
+   width: 100%;
+   height: 280px;
+   display: flex;
+   border-radius: 30px 0px 30px 30px;
+   background-color: red;
+   overflow: hidden;
+}
+
+.user-profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user-profile-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.user-profile-text span{
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+}
+
+.user-profile-text h1{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+
+.profile-social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.profile-social-container a{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: var(--text-color);
+    transition: all ease 0.3s;
+}
+
+.profile-social-container a:hover,
+.user-profile-btns a:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.user-profile-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70px;
+    border-top: 1px solid var(--text-color);
+    width: 100%;
+}
+
+.user-profile-btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all ease 0.3s;
+}
+
+.user-profile-btns a:first-child{
+    border-right: 1px solid black;
+}
