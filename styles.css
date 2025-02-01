@@ -16,7 +16,7 @@ ul {
 :root{
     --main-color: purple;
     --secondary-color: red;
-    --text-color: gold;
+    --text-color: white;
     --border-color: #303030;
     --gradient-start: #4d4d4d;
     --gradient-end: #2b2b2b;
@@ -27,7 +27,7 @@ ul {
 
 body{
     color: var(--text-color);
-    background-image: linear-gradient(120deg, var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    background-image: linear-gradient(120deg, black, var(--bg-gradient-end)) !important;
     background-attachment: fixed;
 }
 
@@ -146,7 +146,7 @@ header nav ul li a:hover::before{
 
 .dark-light-btn:hover,
 header ul li a:hover{
-    background-color: gold;
+    background-color: white;
     color: purple;
 }
 
@@ -255,4 +255,44 @@ header ul li a:hover{
 
 .user-profile-btns a:first-child{
     border-right: 1px solid black;
+}
+
+.section-container{
+    background: linear-gradient(90deg, rgb(65, 65, 65), rgb(122, 122, 122)) !important;
+    padding: 45px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-content{
+    display:flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#about-us{
+    border-radius: 0px 30px 0px 0px;
+    padding: 85px 50px;
+}
+
+#about-us h3{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#about-us h3 span{
+    color: plum;
+}
+
+#about-us #role{
+    opacity: 1;
+    white-space: nowrap;
+    transition: opacity 0.5s ease-out;
+    border-right: 2px solid magenta;
+    display: inline-block;
+    padding-right: 5px;
 }
