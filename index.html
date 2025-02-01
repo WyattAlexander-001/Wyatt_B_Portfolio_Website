@@ -17,12 +17,12 @@
                 <nav>
                     <button class="dark-light-btn"><i class="fa-regular fa-sun"></i></button>
                     <ul>
-                        <li><a href="#" data-label="About"><i class="fa-solid fa-address-card"></i></a></li>
-                        <li><a href="#" data-label="Skills"><i class="fa-solid fa-layer-group"></i></a></li>
-                        <li><a href="#" data-label="Work"><i class="fa-solid fa-wrench"></i></a></li>
-                        <li><a href="#" data-label="Projects"><i class="fa-solid fa-code"></i></a></li>
-                        <li><a href="#" data-label="Resume"><i class="fa-solid fa-scroll"></i></a></li>
-                        <li><a href="#" data-label="Contact"><i class="fa-regular fa-message"></i></a></li>
+                        <li><a href="#about-us" data-label="About"><i class="fa-solid fa-address-card"></i></a></li>
+                        <li><a href="#skills" data-label="Skills"><i class="fa-solid fa-layer-group"></i></a></li>
+                        <li><a href="#edu-work" data-label="Work"><i class="fa-solid fa-wrench"></i></a></li>
+                        <li><a href="#projects" data-label="Projects"><i class="fa-solid fa-code"></i></a></li>
+                        <li><a href="cv/Wyatt_Bushman_Resume.pdf" target="_blank" data-label="Resume"><i class="fa-solid fa-scroll"></i></a></li>
+                        <li><a href="mailto:WBushman@Albany.edu?subject=Hello%20Wyatt%20Bushman%20Your%20Portfolio" data-label="Contact"><i class="fa-regular fa-message"></i></a></li>
                     </ul>
                 </nav>
             </header>
@@ -44,9 +44,11 @@
 
                     </div>
                     <div class="user-profile-btns">
-                        <a href="cv/Wyatt_Bushman_Resume.pdf" download target="_blank">Download CV</a>
-                        <a href="">Contact Me</a>
-                    </div>
+                        <a href="cv/Wyatt_Bushman_Resume.pdf" download>Download CV</a>
+                        <!-- Contact Me: opens email with subject line -->
+                        <a href="mailto:WBushman@Albany.edu?subject=Hello%20Wyatt%20Bushman%20Your%20Portfolio">Contact Me</a>
+                      </div>
+                      
                 </div>
                 
             </div>
@@ -55,12 +57,287 @@
 
         <div class="all-content">
             <section id="about-us" class="section-container">
-                <h3>Hello, My Name Is Wyatt Bushman And I'm A: <span id="role"></span></h3>
-                <h1>Automation Engineer and Web Developer in New York, Albany</h1>
-                <p>I have a love of programming and solving problems. Experience in automation, 
-                    full stack development, and game developement. I enjoy all stages of the 
-                    software developement life cycle, and believe in quality above all else </p>
+                <h3><span id="role"></span></h3>
+                <h1>Welcome To My Portfolio</h1>
+                <p>My name is Wyatt Bushman, I'm from Albany NY.
+                    I have a love of programming and solving problems. 
+                    My experience is in automation, quality assurance, full-stack development, and game developement. 
+                    I enjoy all stages of the software developement life cycle, and believe in quality above all else.</p>
+                <!-- <div class="project-container-about">
+                    <div class="project-container-box">
+                        <span>100</span>
+                        <strong>GitHub Repos</strong>
+                    </div>
+                    <div class="project-container-box">
+                        <span>96</span>
+                        <strong>Completed Projects</strong>
+                    </div>
+                    <div class="project-container-box">
+                        <span>4</span>
+                        <strong>Year Education</strong>
+                    </div>
+                </div> -->
             </section>
+
+            <section id="skills" class="section-container">
+                <div class="section-heading">
+                    <!-- <span><i class="fa-solid fa-layer-group"></i>Technical Skills</span> -->
+                    <h3>Technologies:</h3>
+                </div>
+
+                <div class="skill-box-container">
+                    <div class="skill-box bg-gradient">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box bg-gradient">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box bg-gradient">
+                        <div class="skill-box-content">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box bg-gradient">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-java"></i>                            
+                            <span>Java</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box bg-gradient">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-windows"></i>                            
+                            <span>C#</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box bg-gradient">
+                        <div class="skill-box-content">
+                            <i class="fa-brands fa-sketch"></i>                            
+                            <span>Ruby</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section-container">
+                <div class="section-heading">
+                    <h3>Projects:</h3>
+                </div>
+                <ul class="project-list">
+                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="ReactJs">ReactJS</li>
+                    <li data-filter="Game">Game</li>
+                    <li data-filter="Java">Java</li>
+                    <li data-filter="Analytics">Analytics</li>
+                </ul>
+
+                <div class="project-container">
+
+                    <a href="https://github.com/WyattAlexander-001/Cutting_Stock_Problem/tree/main" target="_blank" class="project-box" data-category="ReactJs">
+                        <div class="project-box-img">
+                            <img src="images/CSC.PNG" alt="Cutting Stock Calculator">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>Cutting Stock Calculator</strong>
+                                <p></p>
+                                <span>Website - ReactJs</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/WyattAlexander-001/Prisoner_Fencing" target="_blank" class="project-box" data-category="Game">
+                        <div class="project-box-img">
+                            <img src="images/prisonerFencing.png" alt="Prisoner's Fencing">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>Prisoner's Fencing</strong>
+                                <p></p>
+                                <span>Game - Godot</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/WyattAlexander-001/AWK-Interpreter-In-Java" target="_blank" class="project-box" data-category="Java">
+                        <div class="project-box-img">
+                            <img src="images/gui.PNG" alt="AWK Interpreter">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>AWK Interpreter</strong>
+                                <p></p>
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://tdalbavie.itch.io/recycle-roller" target="_blank" class="project-box" data-category="Game">
+                        <div class="project-box-img">
+                            <img src="images/recycle_roller.jpg" alt="Recyle Roller 3D">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>Recyle Roller 3D</strong>
+                                <p></p>
+                                <span>Game - Unity C#</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/WyattAlexander-001/AllAboutAvocados_Final" target="_blank" class="project-box" data-category="ReactJs">
+                        <div class="project-box-img">
+                            <img src="images/typesOfAvo.png" alt="AllAboutAvocados.com">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>AllAboutAvocados.com</strong>
+                                <p></p>
+                                <span>Website - ReactJs</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/WyattAlexander-001/RedditFilterExtension" target="_blank" class="project-box" data-category="ReactJs">
+                        <div class="project-box-img">
+                            <img src="images/Reddit.PNG" alt="AllAboutAvocados.com">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>Reddit Phrase Filter</strong>
+                                <p></p>
+                                <span>Chrome Extension - ReactJs</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/WyattAlexander-001/Covid_Analysis__Visual_Portfolio_Project_SQL" target="_blank" class="project-box" data-category="Analytics">
+                        <div class="project-box-img">
+                            <img src="images/analytics.png" alt="AllAboutAvocados.com">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>COVID-19 Dashboard</strong>
+                                <p></p>
+                                <span>Dashboard - Analytics</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/WyattAlexander-001/LibraryApp" target="_blank" class="project-box" data-category="ReactJs">
+                        <div class="project-box-img">
+                            <img src="images/addbook.png" alt="AllAboutAvocados.com">
+                        </div>
+                        <div class="project-box-text-container">
+                            <div class="project-box-text">
+                                <strong>Simple Library App</strong>
+                                <p></p>
+                                <span>WebApp - ReactJs</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                
+            </section>
+
+
+            <section id="edu-work" class="section-container">
+                <div class="section-heading">
+                  <h3>Experience & Education</h3>
+                </div>
+              
+                <div class="edu-work-container">
+                  <!-- EDUCATION BLOCK -->
+                  <div class="edu-container">
+                    <span class="edu-work-label">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      <strong>Education</strong>
+                    </span>
+              
+                    <div class="edu-work-box-container">
+                      <!-- First Education Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">2022 - 2024</span>
+                        <strong>BS in Computer Science</strong>
+                        <span class="edu-work-location">University At Albany, SUNY</span>
+                        <span class="edu-work-location">Albany, NY</span>
+                      </div>
+              
+                      <!-- Second Education Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">2012 - 2016</span>
+                        <strong>BS in Applied Biology</strong>
+                        <span class="edu-work-location">Sage College of Albany</span>
+                        <span class="edu-work-location">Albany, NY</span>
+                      </div>
+                    </div> <!-- .edu-work-box-container (education) -->
+                  </div> <!-- .edu-container -->
+              
+                  <!-- WORK BLOCK -->
+                  <div class="work-container">
+                    <span class="edu-work-label">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <strong>Work Experience</strong>
+                    </span>
+              
+                    <div class="edu-work-box-container">
+                      <!-- First Work Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">May 2024 - Present</span>
+                        <strong>Automation Engineer</strong>
+                        <span class="edu-work-location">NYS ITS Office of Children and Family Services</span>
+                        <span class="edu-work-location">Albany, NY</span>
+                      </div>
+              
+                      <!-- Second Work Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">May 2024 - December 2024</span>
+                        <strong>Compiler Research Intern</strong>
+                        <span class="edu-work-location">University At Albany, SUNY</span>
+                        <span class="edu-work-location">Albany, NY</span>
+                      </div>
+              
+                      <!-- Third Work Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">June 2023 - September 2023</span>
+                        <strong>Software Developer Contract</strong>
+                        <span class="edu-work-location">Text Student Auto</span>
+                        <span class="edu-work-location">Amsterdam, NY</span>
+                      </div>
+              
+                      <!-- Fourth Work Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">January 2021 - February 2022</span>
+                        <strong>QC Laboratory Technician</strong>
+                        <span class="edu-work-location">Specialty Silicone Products</span>
+                        <span class="edu-work-location">Ballston Spa, NY</span>
+                      </div>
+
+                     <!-- Fifth Work Entry -->
+                      <div class="edu-work-box">
+                        <span class="edu-work-year">November 2017 - December 2021</span>
+                        <strong>QC Laboratory Technician</strong>
+                        <span class="edu-work-location">Fage Dairy USA</span>
+                        <span class="edu-work-location">Johnstown, NY</span>
+                      </div>
+
+                    </div> <!-- .edu-work-box-container (work) -->
+                  </div> <!-- .work-container -->
+              
+                </div> <!-- .edu-work-container -->
+              </section>
+                        
 
 
         </div>
