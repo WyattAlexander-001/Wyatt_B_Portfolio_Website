@@ -1,8 +1,4 @@
-# Wyatt_B_Portfolio_Website
- A simple portfolio website using html css and js just to showcase projects I worked on.
+# Wyatt Bushman Portfolio Website
+[Portfolio](https://wyattalexander-001.github.io/Wyatt_B_Portfolio_Website/)
 
-TODO:
-Add pdf opening in new tab
-contact functionality
-projects displayed nicely
-responsive.
+This is my portfolio website where I list my projects and work experience. All made with HTML/CSS/JS.
