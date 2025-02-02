@@ -5,6 +5,24 @@
     font-family: 'Kanit', Cambria;
 }
 
+
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-bottom: 10px; /* match your dark-light-btn spacing if you want */
+  }
+  
+  /* Keep nav-links visible on desktop */
+  .nav-links {
+    display: grid; /* or flex, as you currently have it */
+    grid-gap: 10px;
+  }
+
+
 a {
     text-decoration: none;
 }
@@ -532,12 +550,67 @@ header ul li a:hover{
   
   /* Light Theme Override */
 :root.light-theme {
-    /* Example overrides – adjust to your liking */
-    --main-color: #9432ad;     /* a lighter purple, if you like */
-    --text-color: #1f1f1f;     /* darker text for light mode */
-    --bg-color: #f2f2f2;       /* background for buttons, etc. */
-    --gradient-start: #dcdcdc; /* used in your background gradient */
-    --gradient-end: #bbbbbb;
-    --bg-gradient-start: #e8e8e8;
-    --bg-gradient-end: #fafafa;
-  }
+  /* Example overrides – adjust to your liking */
+  --main-color: #9432ad;     /* a lighter purple, if you like */
+  --text-color: #1f1f1f;     /* darker text for light mode */
+  --bg-color: #f2f2f2;       /* background for buttons, etc. */
+  --gradient-start: #dcdcdc; /* used in your background gradient */
+  --gradient-end: #bbbbbb;
+  --bg-gradient-start: #e8e8e8;
+  --bg-gradient-end: #fafafa;
+}
+
+
+/*==========================================================*/
+
+@media (max-width: 768px) {
+
+    /* Make the main container 1 column */
+    .main-container {
+        grid-template-columns: 1fr;
+        margin: 20px auto; /* reduce margin if desired */
+    }
+
+    /* Stack the menu-profile too */
+    .menu-profile {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        /* optional: margin-bottom: 20px; if you want space after the profile */
+    }
+
+
+    /* Show the hamburger button on mobile */
+    .hamburger-btn {
+      display: block;
+      margin-bottom: 10px; 
+      margin-left: 20px;
+      position: relative;
+      z-index: 9999;
+    }
+  
+    .nav-links {
+        display: none;
+        position: absolute; /* Instead of fixed */
+        top: 70px;          /* Just below your dark-light button, etc. */
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: linear-gradient(120deg, var(--gradient-start), var(--gradient-end));
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+    /* When nav-links has .open, show it */
+    .nav-links.open {
+      display: flex;
+    }
+  
+    /* 
+       Because .nav-links is now fixed at top, 
+       you might want some padding at the top of .all-content so it's not hidden.
+    */
+    .all-content {
+      margin-top: 100px; /* or whatever height your nav might occupy */
+    }
+}
